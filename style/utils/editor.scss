@@ -1,0 +1,19 @@
+/*  EDITOR  */
+
+.editor-item {
+    position: relative;
+    & textarea {
+        width: 100%;
+        height: auto;
+    }
+    & label {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        background: $grayCool;
+        color: $whitePlain;
+        padding: 3px 7px;
+        border-radius: 3px;
+        z-index: 10;
+    }
+}

@@ -1,0 +1,199 @@
+.calendar-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    & .jump-to-date-container {
+        width: 100%;
+        height: auto;
+        line-height: 1.7;
+        padding-bottom: 10px;
+        margin-top: 5px;
+        & span {
+            font-size: 20px;
+        }
+        & select {
+            padding: 8px 10px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            outline: none;
+            background-color: $primary;
+            color: $primary-color;
+        }
+        & select:focus {
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            border: 1px solid rgba(81, 203, 238, 1);
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
+        }
+    }
+    & .calendar-title-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        & .arrow:hover,
+        & .arrow:hover {
+            cursor: pointer;
+            opacity: .8;
+            transform: scale(1.2);
+        }
+    }
+    & table {
+        border-collapse: disabled;
+        table-layout: fixed;
+        border-spacing: 15px;
+        width: 100%;
+        height: auto;
+        & thead th {
+            font-size: 20px;
+        }
+        & thead th,
+        & tbody td {
+            padding: 10px;
+            font-size: 20px;
+        }
+        @media (max-width: 700px) {
+            & thead th {
+                font-size: 12px;
+            }
+            & tbody td {
+                padding: 5px;
+                font-size: 16px;
+            }
+        }
+        & tbody {
+            & .cell {
+                border: 1px solid gray;
+            }
+            & .cell-today {
+                background: $info;
+                color: $info-color;
+            }
+            & .cell-sat-sun {
+                background: rgba(158, 157, 157, 0.555);
+                color: white;
+            }
+            & .cell-selected {
+                background: rgba(90, 194, 4, 0.644);
+                color: white;
+            }
+            & .cell-selected.today {
+                color: $primary;
+                font-weight: bold;
+                box-shadow: inset 1px 1px $primary, inset -1px -1px $primary;
+            }
+            & .cell:hover,
+            & .cell-today:hover,
+            & .cell-today:hover,
+            & .cell-sat-sun:hover,
+            & .cell-selected:hover {
+                background: $orange!important;
+                color: white!important;
+                cursor: pointer;
+                transform: scale(1.1);
+                font-weight: bold;
+                border: none;
+            }
+        }
+    }
+}
+
+.calendar-wrapper.background-dark {
+    & table {
+        & tbody {
+            & .cell-selected.today {
+                color: $dark-color!important;
+                box-shadow: inset 1px 1px $dark-color, inset -1px -1px $dark-color;
+            }
+            & .cell:hover,
+            & .cell-today:hover,
+            & .cell-today:hover,
+            & .cell-sat-sun:hover,
+            & .cell-selected:hover {
+                background: $orange!important;
+                color: white!important;
+            }
+        }
+    }
+}
+
+.calendar-wrapper.background-primary,
+.calendar-wrapper.background-info,
+.calendar-wrapper.background-danger {
+    & .jump-to-date-container {
+        & select {
+            background-color: $light;
+            color: $light-color;
+        }
+    }
+    & table {
+        & tbody {
+            & .cell,
+            & .cell-sat-sun {
+                border: 1px solid $primary-color;
+            }
+            & .cell-selected.today {
+                color: $dark!important;
+                box-shadow: inset 1px 1px $dark, inset -1px -1px $dark;
+            }
+        }
+    }
+}
+
+.calendar-wrapper.background-success {
+    & .jump-to-date-container {
+        & select {
+            background-color: $light;
+            color: $light-color;
+        }
+    }
+    & table {
+        & tbody {
+            & .cell {
+                background: rgba(158, 157, 157, 0.555);
+                color: $dark-color;
+            }
+            & .cell-sat-sun {
+                background-color: $grayJet;
+                color: $dark-color;
+            }
+            & .cell-selected {
+                background: rgba(90, 194, 4, 0.644);
+                color: white;
+                box-shadow: inset 1px 1px $dark-color, inset -1px -1px $dark-color;
+            }
+            & .cell-selected.today {
+                color: $yellowCorn;
+                box-shadow: inset 1px 1px $yellowCorn, inset -1px -1px $yellowCorn;
+            }
+        }
+    }
+}
+
+.calendar-wrapper.background-warning {
+    & table {
+        & tbody {
+            & .cell:hover,
+            & .cell-today:hover,
+            & .cell-today:hover,
+            & .cell-sat-sun:hover,
+            & .cell-selected:hover {
+                background: $dark!important;
+                color: $dark-color!important;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .calendar-wrapper {
+        & table {
+            border-spacing: 8px;
+        }
+    }
+}

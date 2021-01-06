@@ -1,0 +1,202 @@
+@import 'variables/color.scss';
+// BUTTON
+.button-sm-100,
+.button-md-100,
+.button-lg-100,
+.button-xl-100 {
+    width: 100%!important;
+}
+
+.button-sm,
+.button-sm-100 {
+    padding: 7px 9px!important;
+    font-size: 14px!important;
+    border-radius: 4px!important;
+}
+
+.button-md,
+.button-md-100 {
+    padding: 7px 8px!important;
+    font-size: 17px!important;
+    border-radius: 5px!important;
+}
+
+.button-lg,
+.button-lg-100 {
+    width: auto!important;
+    padding: 10px 11px!important;
+    font-size: 20px!important;
+    border-radius: 7px!important;
+}
+
+.button-xl,
+.button-xl-100 {
+    padding: 14px 17px!important;
+    font-size: 25px!important;
+    border-radius: 9px!important;
+}
+
+.button-sm,
+.button-md,
+.button-lg,
+.button-xl,
+.button-sm-100,
+.button-md-100,
+.button-lg-100,
+.button-xl-100 {
+    border: none!important;
+    text-decoration: none!important;
+    text-align: center!important;
+    vertical-align: middle!important;
+    white-space: nowrap!important; // prevent word wrap in a href links
+}
+
+.button-sm:hover,
+.button-md:hover,
+.button-lg:hover,
+.button-xl:hover,
+.button-sm-100:hover,
+.button-md-100:hover,
+.button-lg-100:hover,
+.button-xl-100:hover {
+    cursor: pointer!important;
+}
+
+.button-sm:focus,
+.button-md:focus,
+.button-lg:focus,
+.button-xl:focus,
+.button-sm-100:focus,
+.button-md-100:focus,
+.button-lg-100:focus,
+.button-xl-100:focus {
+    outline-width: 0!important;
+}
+
+.button-dark {
+    background: $dark!important;
+    color: $dark-color!important;
+}
+
+.button-light {
+    background: $light!important;
+    color: $light-color!important;
+}
+
+.button-primary {
+    background: $primary!important;
+    color: $primary-color!important;
+}
+
+.button-success {
+    background: $success!important;
+    color: $success-color!important;
+}
+
+.button-warning {
+    background: $warning!important;
+    color: $warning-color!important;
+}
+
+.button-info {
+    background: $info!important;
+    color: $info-color!important;
+}
+
+.button-danger {
+    background: $danger!important;
+    color: $danger-color!important;
+}
+
+.button-dark:hover,
+.button-light:hover,
+.button-primary:hover,
+.button-success:hover,
+.button-info:hover,
+.button-warning:hover,
+.button-danger:hover {
+    opacity: 0.9!important;
+}
+
+.button-outline-dark {
+    color: $dark!important;
+    box-sizing: border-box!important;
+    box-shadow: inset 0px 0px 0px 1px $dark!important;
+}
+
+.button-outline-dark:hover {
+    background: $dark!important;
+    color: $dark-color!important;
+}
+
+.button-outline-light {
+    color: $light!important;
+    box-shadow: inset 0px 0px 0px 1px $light!important;
+}
+
+.button-outline-light:hover {
+    background: $light!important;
+    color: $light-color!important;
+}
+
+.button-outline-primary {
+    color: $primary;
+    box-shadow: inset 0px 0px 0px 1px $primary!important;
+}
+
+.button-outline-primary:hover {
+    background: $primary!important;
+    color: $primary-color!important;
+}
+
+.button-outline-success {
+    color: $success!important;
+    box-shadow: inset 0px 0px 0px 1px $success!important;
+}
+
+.button-outline-success:hover {
+    background: $success!important;
+    color: $success-color!important;
+}
+
+.button-outline-warning {
+    color: $warning;
+    box-shadow: inset 0px 0px 0px 1px $warning!important;
+}
+
+.button-outline-warning:hover {
+    background: $warning!important;
+    color: $warning-color!important;
+}
+
+.button-outline-info {
+    color: $info!important;
+    box-shadow: inset 0px 0px 0px 1px $info!important;
+}
+
+.button-outline-info:hover {
+    background: $info!important;
+    color: $info-color!important;
+}
+
+.button-outline-danger {
+    color: $danger!important;
+    box-shadow: inset 0px 0px 0px 1px $danger!important;
+}
+
+.button-outline-danger:hover {
+    background: $danger!important;
+    color: $danger-color!important;
+}
+
+.button-outline-dark,
+.button-outline-light,
+.button-outline-primary,
+.button-outline-success,
+.button-outline-warning,
+.button-outline-info,
+.button-outline-danger {
+    background: inherit!important;
+}
+
+// BUTTON ENDS

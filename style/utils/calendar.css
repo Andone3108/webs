@@ -1,0 +1,142 @@
+.calendar-container {
+  overflow-x: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.calendar-container .month-year-container {
+  width: 100%;
+  height: auto;
+  line-height: 1.7;
+  padding-bottom: 10px;
+  margin-top: 5px;
+}
+
+.calendar-container .month-year-container span {
+  font-size: 20px;
+}
+
+.calendar-container .month-year-container select {
+  padding: 8px 10px;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.calendar-container .header-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar-container .header-container .arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.calendar-container .header-container .arrow:hover,
+.calendar-container .header-container .arrow:hover {
+  cursor: pointer;
+  opacity: .8;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.calendar-container table {
+  border-collapse: disabled;
+  table-layout: fixed;
+  border-spacing: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.calendar-container table thead th {
+  font-size: 20px;
+}
+
+.calendar-container table thead th,
+.calendar-container table tbody td {
+  padding: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .calendar-container table thead th {
+    font-size: 12px;
+  }
+  .calendar-container table tbody td {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+.calendar-container table tbody .cell,
+.calendar-container table tbody .cell-current-day,
+.calendar-container table tbody .cell-sat-sun,
+.calendar-container table tbody .cell-on-air {
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.calendar-container table tbody .cell-current-day {
+  background: lightskyblue;
+  color: white;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0.2px 0.2px 2px red, inset -0.2px -0.2px 2px red;
+          box-shadow: inset 0.2px 0.2px 2px red, inset -0.2px -0.2px 2px red;
+}
+
+.calendar-container table tbody .cell-sat-sun {
+  background: rgba(158, 157, 157, 0.555);
+  color: white;
+}
+
+.calendar-container table tbody .cell-on-air {
+  background: rgba(90, 194, 4, 0.644);
+  color: white;
+}
+
+.calendar-container table tbody .cell-on-air-today {
+  background: #5ac204;
+  border-radius: 0px;
+  color: white;
+}
+
+.calendar-container table tbody .cell-today {
+  background: rgba(17, 4, 194, 0.767);
+  color: white;
+  border-radius: 0px;
+}
+
+.calendar-container table tbody .cell:hover,
+.calendar-container table tbody .cell-today:hover,
+.calendar-container table tbody .cell-current-day:hover,
+.calendar-container table tbody .cell-sat-sun:hover,
+.calendar-container table tbody .cell-on-air:hover,
+.calendar-container table tbody .cell-on-air-today:hover {
+  background: lightsalmon;
+  color: white;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+  .calendar-container table {
+    border-spacing: 8px;
+  }
+}
+/*# sourceMappingURL=calendar.css.map */

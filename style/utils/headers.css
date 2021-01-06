@@ -1,0 +1,2 @@
+.header-wave{position:relative;background:#09f;color:#fff;text-align:center;overflow:hidden}.header-wave>svg{display:block;transform-origin:bottom;animation:animateWave 1s cubic-bezier(0.23, 1, 0.32, 1) forwards}@keyframes animateWave{0%{transform:scale(1, 0)}100%{transform:scale(1, 1)}}.header-curved{background:#09f;color:white;text-align:center}.header-curved svg{display:block}.header-curved svg{fill:#fff;fill-opacity:1}.header-curved svg:first-child{transform:rotate(180deg)}
+/*# sourceMappingURL=headers.css.map */

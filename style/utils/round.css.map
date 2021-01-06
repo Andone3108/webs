@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,WAAW,AAAC,CACR,aAAa,CAAE,GAAG,CACrB,AAED,AAAA,WAAW,AAAC,CACR,aAAa,CAAE,IAAI,CACtB,AAED,AAAA,WAAW,AAAC,CACR,aAAa,CAAE,IAAI,CACtB,AAED,AAAA,WAAW,AAAC,CACR,aAAa,CAAE,IAAI,CACtB,AAED,AAAA,eAAe,AAAC,CACZ,aAAa,CAAE,GAAG,CACrB",
+    "sources": [
+        "round.scss"
+    ],
+    "names": [],
+    "file": "round.css"
+}

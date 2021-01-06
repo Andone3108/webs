@@ -1,0 +1,36 @@
+@import 'variables/color.scss';
+
+/* dark border */
+
+hr.hr {
+    border-top: 1px solid $dark;
+}
+
+
+/* Dashed dark border */
+
+hr.hr-dashed {
+    border-top: 1px dashed $dark;
+}
+
+
+/* Dotted dark border */
+
+hr.hr-dotted {
+    border-top: 1px dotted $dark;
+}
+
+
+/* Thick dark border */
+
+hr.hr-thick {
+    border: 1px solid $dark;
+}
+
+
+/* Large rounded dark border */
+
+hr.hr-lg-rounded {
+    border: 10px solid $dark;
+    border-radius: 5px;
+}

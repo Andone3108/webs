@@ -1,0 +1,47 @@
+.table {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    & table {
+        border-collapse: collapse;
+        width: 100%;
+        height: auto;
+        & td,
+        & th {
+            padding: 8px;
+        }
+        // & tr:nth-child(even) {
+        //     background-color: #f2f2f2;
+        // }
+        & tr:hover {
+            background-color: #ddd;
+            color: darkblue;
+            cursor: pointer;
+        }
+        & th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    }
+    @media (max-width: 700px) {
+        & table {
+            & td,
+            & th {
+                padding: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@keyframes listing-animation {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

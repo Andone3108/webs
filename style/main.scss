@@ -1,0 +1,209 @@
+// @author: Cosmin Neaga
+// @location: United Kingdom
+// @file-desc: CSSa file used to style HTML structures
+// @work-desc: CSS framework created by Cosmin Neaga inspired after the popular css framework Bootstrap 4
+// @start-date: OCT 2020
+// @info: SCSS file compiled through VS Code into CSS
+// external scss files dependencies
+@import 'utils/variables/color.scss';
+@import 'utils/variables/breakpoints.scss';
+// additional files import reponsible basic styles
+@import 'utils/background.scss';
+@import 'utils/flex.scss';
+@import 'utils/grid.scss';
+@import 'utils/paddings.scss';
+@import 'utils/margins.scss';
+@import 'utils/height.scss';
+@import 'utils/round.scss';
+@import 'utils/overflow.scss';
+@import 'utils/borders.scss';
+@import 'utils/img.scss';
+// import text
+@import 'utils/text.scss';
+// import buttons
+@import 'utils/button.scss';
+// import alerts
+@import 'utils/alert.scss';
+// import navigation bar
+@import 'utils/navigation.scss';
+// import form
+@import 'utils/form/basicForm.scss';
+// import carousels
+@import 'utils/carousel/carouselImageGalleryExhibition.scss';
+@import 'utils/carousel/carouselImageShopping.scss';
+@import 'utils/carousel/carouselTestimonials.scss';
+@import 'utils/carousel/carouselQuotations.scss';
+@import 'utils/carousel/carouselHeader.scss';
+// import table
+@import 'utils/table.scss';
+// import animated css
+@import 'utils/animated.scss';
+// import modal
+@import 'utils/modal.scss';
+// import calendar
+@import 'utils/calendar.scss';
+// import loaders
+@import 'utils/loaders.scss';
+// import editor
+@import 'utils/editor.scss';
+// import headers style
+@import 'utils/headers.scss';
+// import styled hr's
+@import 'utils/hr.scss';
+// import shadow
+@import 'utils/shadow.scss';
+// import rotate
+@import 'utils/rotate.scss';
+
+/*
+
+
+*/
+
+// FONTS
+
+/*
+@font-face {
+    font-family: 'main-regular';
+    src: url('font/KumbhSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'main-light';
+    src: url('font/KumbhSans-Light.ttf');
+}
+@font-face {
+    font-family: 'main-bold';
+    src: url('font/KumbhSans-Bold.ttf');
+}
+*/
+
+@font-face {
+    font-family: 'main-regular';
+    src: url('utils/font/Quicksand/static/Quicksand-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'main-light';
+    src: url('utils/font/Quicksand/static/Quicksand-Light.ttf');
+}
+
+@font-face {
+    font-family: 'main-bold';
+    src: url('utils/font/Quicksand/static/Quicksand-Bold.ttf');
+}
+
+
+/*
+
+
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'main-regular';
+    overflow-x: hidden;
+}
+
+code,
+pre {
+    white-space: pre-wrap !important;
+    width: 100%;
+    height: auto;
+    // max-height: 60vh;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    line-height: inherit !important;
+    font-size: inherit !important;
+}
+
+pre::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+ul,
+ol {
+    & li {
+        margin: 5px 0;
+    }
+}
+
+// @media (max-width: 800px) {
+//     ul,
+//     ol {
+//         margin: 0;
+//         padding: 0;
+//     }
+// }
+pre[class*="language-"] {
+    font-size: 14px !important;
+    & span {
+        font-size: 15px !important;
+    }
+}
+
+
+/*       custom scrollbar    */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 43, 127, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(252, 209, 22, 1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ce1126;
+}
+
+.simple-wallpaper {
+    background: url('../images/bg.png') repeat-x;
+}
+
+.mocha-wallpaper {
+    background: url('../images/mocha.png');
+}
+
+code {
+    line-height: 1;
+}
+
+// testing
+#scroll-btn {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background: $redCG;
+    color: white;
+    outline-width: 0px;
+    border: none;
+}
+
+#scroll-btn:hover {
+    cursor: pointer;
+}

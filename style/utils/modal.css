@@ -1,0 +1,159 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  max-width: 95%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+.modal .modal-content .modal-header,
+.modal .modal-content .modal-footer {
+  padding: 15px;
+  background-color: #8d9194;
+  color: white;
+}
+
+.modal .modal-content .modal-header .modal-close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.modal .modal-content .modal-header .modal-close:hover,
+.modal .modal-content .modal-header .modal-close:focus {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.modal .modal-content .modal-body {
+  padding: 20px;
+}
+
+.modal .modal-content .modal-body .modal-body form {
+  width: 60%;
+  margin: auto;
+}
+
+.modal .modal-content .modal-body .form-group {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+.modal .modal-content .modal-body .form-group label,
+.modal .modal-content .modal-body .form-group .form-control-sm,
+.modal .modal-content .modal-body .form-group .form-control-md,
+.modal .modal-content .modal-body .form-group .form-control-lg {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  transition: -webkit-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+}
+
+.modal .modal-content .modal-body .form-group label::-webkit-scrollbar,
+.modal .modal-content .modal-body .form-group .form-control-sm::-webkit-scrollbar,
+.modal .modal-content .modal-body .form-group .form-control-md::-webkit-scrollbar,
+.modal .modal-content .modal-body .form-group .form-control-lg::-webkit-scrollbar {
+  width: 0px;
+}
+
+.modal .modal-content .modal-body .form-group .form-control-sm {
+  padding: 5px 2px;
+  font-size: 14px;
+  border: 1px solid skyblue;
+  border-radius: 2px;
+}
+
+.modal .modal-content .modal-body .form-group .form-control-md {
+  padding: 8px 4px;
+  font-size: 16px;
+  border: 1px solid skyblue;
+  border-radius: 4px;
+}
+
+.modal .modal-content .modal-body .form-group .form-control-lg {
+  padding: 10px 5px;
+  font-size: 18px;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+}
+
+.modal .modal-content .modal-body .form-group .form-control-sm:focus,
+.modal .modal-content .modal-body .form-group .form-control-md:focus,
+.modal .modal-content .modal-body .form-group .form-control-lg:focus {
+  outline-width: 0;
+  -webkit-box-shadow: inset 1px 2px 4px rgba(0, 132, 255, 0.07), 0.5px 0.5px 8px rgba(0, 132, 255, 0.3);
+          box-shadow: inset 1px 2px 4px rgba(0, 132, 255, 0.07), 0.5px 0.5px 8px rgba(0, 132, 255, 0.3);
+}
+
+.modal .modal-content .modal-center-text {
+  text-align: center;
+}
+
+.modal .modal-content .modal-text-big {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .modal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=modal.css.map */
